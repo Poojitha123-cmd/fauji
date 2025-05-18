@@ -8,10 +8,11 @@
     /* Reset box sizing */
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       background-color: #121212;
       color: #e0e0e0;
       font-family: Arial, sans-serif;
@@ -62,7 +63,7 @@
       border-radius: 12px;
       padding: 20px;
       width: 280px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.7);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
@@ -81,7 +82,7 @@
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 18px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.9);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
     }
 
     .gun-card h2,
@@ -97,18 +98,19 @@
       line-height: 1.4;
       margin: 5px 0;
     }
-    .rating {
-  color: gold;
-  font-size: 1.1rem;
-  margin: 5px 0;
-}
 
-.price {
-  color: #90ee90;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-top: 5px;
-}
+    .rating {
+      color: gold;
+      font-size: 1.1rem;
+      margin: 5px 0;
+    }
+
+    .price {
+      color: #90ee90;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
 
     footer {
       text-align: center;
@@ -120,14 +122,57 @@
       box-shadow: inset 0 1px 0 #333;
     }
 
-    /* Responsive */
-    @media (max-width: 650px) {
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.8rem;
+        padding: 20px 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px;
+        font-size: 1rem;
+      }
+
       .container {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
       }
+
       .gun-card {
         width: 90%;
+        max-width: 350px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        padding: 10px 0;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .gun-card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .gun-card h2,
+      .gun-card h3 {
+        font-size: 1.2rem;
+      }
+
+      .gun-card p {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -149,7 +194,7 @@
       <img src="download.jpg" alt="Glock 19" />
       <h2>Glock 19</h2>
       <div class="rating">★★★★☆</div>
-  <div class="price">$500</div>
+      <div class="price">$500</div>
       <p><strong>Caliber:</strong> 9mm</p>
       <p>Compact, lightweight, and reliable — popular among military and police.</p>
     </div>
@@ -158,7 +203,7 @@
       <img src="sig.jpg" alt="SIG Sauer P320" />
       <h3>SIG Sauer P320</h3>
       <div class="rating">★★★★★</div>
-  <div class="price">$650</div>
+      <div class="price">$650</div>
       <p><strong>Caliber:</strong> 9mm</p>
       <p>Modular design with excellent ergonomics used by many armed forces.</p>
     </div>
@@ -167,7 +212,7 @@
       <img src="Ber M9.jpg" alt="Beretta M9" />
       <h3>Beretta M9</h3>
       <div class="rating">★★★☆☆</div>
-  <div class="price">$550</div>
+      <div class="price">$550</div>
       <p><strong>Caliber:</strong> 9mm</p>
       <p>Standard issue pistol for the US military for decades, known for durability.</p>
     </div>
@@ -176,7 +221,7 @@
       <img src="sss.jpg" alt="Smith & Wesson M&P" />
       <h3>Smith & Wesson M&P</h3>
       <div class="rating">★★★★☆</div>
-  <div class="price">$480</div>
+      <div class="price">$480</div>
       <p><strong>Caliber:</strong> 9mm</p>
       <p>Reliable and ergonomic, widely used in law enforcement agencies.</p>
     </div>
@@ -184,8 +229,8 @@
     <div class="gun-card">
       <img src="HK U.jpg" alt="HK USP" />
       <h3>HK USP</h3>
-       <div class="rating">★★★★☆</div>
-  <div class="price">$700</div>
+      <div class="rating">★★★★☆</div>
+      <div class="price">$700</div>
       <p><strong>Caliber:</strong> 9mm</p>
       <p>Highly durable and versatile pistol used worldwide by special units.</p>
     </div>
@@ -193,10 +238,10 @@
     <div class="gun-card">
       <img src="cz.jpg" alt="CZ 75" />
       <h3>CZ 75</h3>
-       <div class="rating">★★★★☆</div>
-  <div class="price">$520</div>
+      <div class="rating">★★★★☆</div>
+      <div class="price">$520</div>
       <p><strong>Caliber:</strong> 9mm</p>
-      <p>Short recoil,tilting barrel — a favorite among competitive shooters and military forces worldwide.</p>
+      <p>Short recoil, tilting barrel — a favorite among competitive shooters and military forces worldwide.</p>
     </div>
   </div>
 
