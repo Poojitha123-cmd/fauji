@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+      background-color: #121212;
+      color: #ffffff;
+}
+
+header {
+  background-color: #1e2a38;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #f4a261;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+nav {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #6cc507;
+  color: #000;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-image: url(sol.jpg) ;
+   background-repeat: no-repeat;
+    background-position: center;
+  /* background: url('https://images.unsplash.com/photo-1605426461384-9f3b37cdd9b2?fit=crop&w=1600&q=80') no-repeat center center/cover; */
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.gun-card {
+  background: #1f1f1f;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.gun-card:hover {
+  transform: translateY(-5px);
+}
+
+.gun-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gun-info {
+  padding: 20px;
+}
+
+.gun-info h2 {
+  font-size: 1.5rem;
+  color: #f4a261;
+}
+
+.gun-info p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+footer {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  color: #999;
+} 
